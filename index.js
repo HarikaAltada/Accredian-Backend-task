@@ -75,7 +75,9 @@ const sendReferralEmail = async (senderEmail, referredEmail) => {
     }
   };
   
-  
+  app.get("/", (req, res) => {
+    res.send("Welcome to the API");
+  });  
 
 // Start Server
 app.listen(5000, () => {
